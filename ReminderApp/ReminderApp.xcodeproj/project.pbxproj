@@ -7,23 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C41B6C0126512B5500499983 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B6C0026512B5500499983 /* UIViewController+Extension.swift */; };
+		C41B6C042651314D00499983 /* DetailListViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B6C032651314D00499983 /* DetailListViewTableViewCell.swift */; };
+		C41B6C072651BE8D00499983 /* AllListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41B6C062651BE8D00499983 /* AllListViewController.swift */; };
 		C4E47C6B264DA6A00049DB14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C6A264DA6A00049DB14 /* AppDelegate.swift */; };
 		C4E47C6D264DA6A00049DB14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C6C264DA6A00049DB14 /* SceneDelegate.swift */; };
-		C4E47C6F264DA6A00049DB14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C6E264DA6A00049DB14 /* ViewController.swift */; };
+		C4E47C6F264DA6A00049DB14 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C6E264DA6A00049DB14 /* ListViewController.swift */; };
 		C4E47C72264DA6A00049DB14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E47C70264DA6A00049DB14 /* Main.storyboard */; };
 		C4E47C74264DA6A40049DB14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E47C73264DA6A40049DB14 /* Assets.xcassets */; };
 		C4E47C77264DA6A40049DB14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E47C75264DA6A40049DB14 /* LaunchScreen.storyboard */; };
+		C4E47C83264DB5230049DB14 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C82264DB5230049DB14 /* HomeViewController.swift */; };
+		C4E47C87264DBFDE0049DB14 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C86264DBFDE0049DB14 /* HomeTableViewCell.swift */; };
+		C4E47C8C264DE4560049DB14 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C8B264DE4560049DB14 /* UITextField+Extension.swift */; };
+		C4E47C92264DE6D30049DB14 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C91264DE6D30049DB14 /* AddReminderViewController.swift */; };
+		C4E47C95264DF3200049DB14 /* AddNewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C94264DF3200049DB14 /* AddNewListViewController.swift */; };
+		C4E47C9A264DF4550049DB14 /* AddNewListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47C99264DF4550049DB14 /* AddNewListCollectionViewCell.swift */; };
+		C4E47CA1264F03EC0049DB14 /* ReminderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E47CA0264F03EC0049DB14 /* ReminderList.swift */; };
+		C4E47CA5264F045E0049DB14 /* reminder.json in Resources */ = {isa = PBXBuildFile; fileRef = C4E47CA4264F045E0049DB14 /* reminder.json */; };
+		C4E47CC12650182B0049DB14 /* ReminderApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E47CBF2650182B0049DB14 /* ReminderApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C41B6C0026512B5500499983 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C41B6C032651314D00499983 /* DetailListViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListViewTableViewCell.swift; sourceTree = "<group>"; };
+		C41B6C062651BE8D00499983 /* AllListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllListViewController.swift; sourceTree = "<group>"; };
 		C4E47C67264DA6A00049DB14 /* ReminderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReminderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E47C6A264DA6A00049DB14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4E47C6C264DA6A00049DB14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C4E47C6E264DA6A00049DB14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4E47C6E264DA6A00049DB14 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		C4E47C71264DA6A00049DB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C4E47C73264DA6A40049DB14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4E47C76264DA6A40049DB14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4E47C78264DA6A40049DB14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4E47C82264DB5230049DB14 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C4E47C86264DBFDE0049DB14 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C4E47C8B264DE4560049DB14 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		C4E47C91264DE6D30049DB14 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
+		C4E47C94264DF3200049DB14 /* AddNewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListViewController.swift; sourceTree = "<group>"; };
+		C4E47C99264DF4550049DB14 /* AddNewListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListCollectionViewCell.swift; sourceTree = "<group>"; };
+		C4E47CA0264F03EC0049DB14 /* ReminderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderList.swift; sourceTree = "<group>"; };
+		C4E47CA4264F045E0049DB14 /* reminder.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = reminder.json; sourceTree = "<group>"; };
+		C4E47CC02650182B0049DB14 /* ReminderApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReminderApp.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +80,59 @@
 		C4E47C69264DA6A00049DB14 /* ReminderApp */ = {
 			isa = PBXGroup;
 			children = (
+				C4E47C9F264F03D10049DB14 /* Model */,
+				C4E47C97264DF4350049DB14 /* Custom Cell */,
+				C4E47C8A264DE4310049DB14 /* Extensions */,
+				C4E47C7F264DA6F70049DB14 /* View */,
 				C4E47C6A264DA6A00049DB14 /* AppDelegate.swift */,
 				C4E47C6C264DA6A00049DB14 /* SceneDelegate.swift */,
-				C4E47C6E264DA6A00049DB14 /* ViewController.swift */,
 				C4E47C70264DA6A00049DB14 /* Main.storyboard */,
 				C4E47C73264DA6A40049DB14 /* Assets.xcassets */,
 				C4E47C75264DA6A40049DB14 /* LaunchScreen.storyboard */,
 				C4E47C78264DA6A40049DB14 /* Info.plist */,
+				C4E47CA4264F045E0049DB14 /* reminder.json */,
+				C4E47CBF2650182B0049DB14 /* ReminderApp.xcdatamodeld */,
 			);
 			path = ReminderApp;
+			sourceTree = "<group>";
+		};
+		C4E47C7F264DA6F70049DB14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4E47C6E264DA6A00049DB14 /* ListViewController.swift */,
+				C4E47C82264DB5230049DB14 /* HomeViewController.swift */,
+				C4E47C91264DE6D30049DB14 /* AddReminderViewController.swift */,
+				C4E47C94264DF3200049DB14 /* AddNewListViewController.swift */,
+				C41B6C062651BE8D00499983 /* AllListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4E47C8A264DE4310049DB14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4E47C8B264DE4560049DB14 /* UITextField+Extension.swift */,
+				C41B6C0026512B5500499983 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4E47C97264DF4350049DB14 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C4E47C86264DBFDE0049DB14 /* HomeTableViewCell.swift */,
+				C4E47C99264DF4550049DB14 /* AddNewListCollectionViewCell.swift */,
+				C41B6C032651314D00499983 /* DetailListViewTableViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		C4E47C9F264F03D10049DB14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4E47CA0264F03EC0049DB14 /* ReminderList.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +195,7 @@
 				C4E47C77264DA6A40049DB14 /* LaunchScreen.storyboard in Resources */,
 				C4E47C74264DA6A40049DB14 /* Assets.xcassets in Resources */,
 				C4E47C72264DA6A00049DB14 /* Main.storyboard in Resources */,
+				C4E47CA5264F045E0049DB14 /* reminder.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +206,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4E47C6F264DA6A00049DB14 /* ViewController.swift in Sources */,
+				C4E47C6F264DA6A00049DB14 /* ListViewController.swift in Sources */,
+				C41B6C0126512B5500499983 /* UIViewController+Extension.swift in Sources */,
+				C4E47C87264DBFDE0049DB14 /* HomeTableViewCell.swift in Sources */,
 				C4E47C6B264DA6A00049DB14 /* AppDelegate.swift in Sources */,
+				C4E47CA1264F03EC0049DB14 /* ReminderList.swift in Sources */,
+				C4E47C8C264DE4560049DB14 /* UITextField+Extension.swift in Sources */,
+				C4E47C83264DB5230049DB14 /* HomeViewController.swift in Sources */,
+				C4E47CC12650182B0049DB14 /* ReminderApp.xcdatamodeld in Sources */,
+				C41B6C042651314D00499983 /* DetailListViewTableViewCell.swift in Sources */,
+				C4E47C9A264DF4550049DB14 /* AddNewListCollectionViewCell.swift in Sources */,
+				C4E47C92264DE6D30049DB14 /* AddReminderViewController.swift in Sources */,
+				C41B6C072651BE8D00499983 /* AllListViewController.swift in Sources */,
 				C4E47C6D264DA6A00049DB14 /* SceneDelegate.swift in Sources */,
+				C4E47C95264DF3200049DB14 /* AddNewListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,6 +385,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZJP5R49QLR;
 				INFOPLIST_FILE = ReminderApp/Info.plist;
@@ -312,8 +393,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ReminderListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -341,6 +423,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4E47CBF2650182B0049DB14 /* ReminderApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4E47CC02650182B0049DB14 /* ReminderApp.xcdatamodel */,
+			);
+			currentVersion = C4E47CC02650182B0049DB14 /* ReminderApp.xcdatamodel */;
+			path = ReminderApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C4E47C5F264DA6A00049DB14 /* Project object */;
 }
