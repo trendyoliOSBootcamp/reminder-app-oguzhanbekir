@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-protocol ReminderUpdateDelegate {
+protocol ReminderUpdateDelegate: AnyObject {
     func refreshTableView()
 }
 

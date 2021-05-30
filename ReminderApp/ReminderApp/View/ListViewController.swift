@@ -17,7 +17,7 @@ final class ListViewController: UIViewController, ListViewUpdateDelegate {
     @IBOutlet private weak var titleLabel: UILabel!
     
     var data: ListOfReminder?
-    var delegate : ReminderUpdateDelegate?
+    weak var delegate : ReminderUpdateDelegate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,13 +53,13 @@ final class ListViewController: UIViewController, ListViewUpdateDelegate {
 
 extension ListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        (data?.items!.count)!
+        data?.items?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "listDetailCell") as? DetailListViewTableViewCell else { fatalError()  }
         cell.titleLabel.text = data?.items?[indexPath.row].title
-        cell.priorityLabel.text! = String(repeating: "!", count: data?.items?[indexPath.row].priority ?? 0)
+        cell.priorityLabel.text = String(repeating: "!", count: data?.items?[indexPath.row].priority ?? 0)
         cell.priorityLabel.textColor = UIColor(named: data?.color ?? "gray")
         if data?.items?[indexPath.row].flag == false {
             cell.flagImage.isHidden = true
@@ -147,7 +147,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
             let results = try context.fetch(fetchRequest)
             
             if results.count > 0 {
-                var flag:Bool?
+                var flag: Bool?
                 for result in results as! [NSManagedObject] {
                     var items: [Item] = []
 
@@ -155,7 +155,7 @@ extension ListViewController: UITableViewDataSource, UITableViewDelegate {
 
                     for element in pastItems.items {
                         if element.id == data?.items?[forRowAt.row].id {
-                            flag =  element.flag! ? false : true
+                            flag = element.flag ?? false ? false : true
                             items.append(Item(id: element.id!, title: element.title, notes: element.notes, flag: flag, priority: element.priority))
                         } else {
                             items.append(Item(id: element.id!, title: element.title, notes: element.notes, flag: element.flag, priority: element.priority))

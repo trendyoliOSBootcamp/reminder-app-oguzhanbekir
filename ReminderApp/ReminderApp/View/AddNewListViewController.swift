@@ -8,18 +8,23 @@
 import UIKit
 import CoreData
 
+
+extension AddNewListViewController {
+    fileprivate enum Constants {
+        static  var items = ["blue", "brown", "red", "green", "yellow", "orange", "car.circle.fill", "cart.circle.fill", "bicycle.circle.fill", "airplane.circle.fill", "house.circle.fill", "paperplane.circle.fill"]
+        static var thumbnailColor = "blue"
+        static var thumbNailImage = "car.circle.fill"
+    }
+}
+
 final class AddNewListViewController: UIViewController {
     @IBOutlet private weak var titleTextField: UITextField!
     @IBOutlet private weak var listImage: UIImageView!
     @IBOutlet private weak var addButton: UIButton!
-    var items = ["blue", "brown", "red", "green", "yellow", "orange", "car.circle.fill", "cart.circle.fill", "bicycle.circle.fill", "airplane.circle.fill", "house.circle.fill", "paperplane.circle.fill"]
     
     var delegate : ReminderUpdateDelegate? 
     var data: [ListOfReminder] = []
     
-    var thumbnailColor = "blue"
-    var thumbNailImage = "car.circle.fill"
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,8 +48,8 @@ final class AddNewListViewController: UIViewController {
         let newList = NSEntityDescription.insertNewObject(forEntityName: "ReminderList", into: context)
         newList.setValue(titleTextField.text, forKey: "title")
         newList.setValue(UUID(), forKey: "id")
-        newList.setValue(thumbnailColor, forKey: "color")
-        newList.setValue(thumbNailImage, forKey: "image")
+        newList.setValue(Constants.thumbnailColor, forKey: "color")
+        newList.setValue(Constants.thumbNailImage, forKey: "image")
         
         let books: [Item] = []
         let mRanges = Items(items: books)
@@ -61,27 +66,27 @@ final class AddNewListViewController: UIViewController {
 
 extension AddNewListViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.items.count
+        return Constants.items.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "newListCVCell", for: indexPath as IndexPath) as? AddNewListCollectionViewCell else { fatalError() }
             if indexPath.row > 5 {
                 cell.circleImage.tintColor = .darkGray
-                cell.circleImage.image = UIImage(systemName: items[indexPath.row])
+                cell.circleImage.image = UIImage(systemName: Constants.items[indexPath.row])
             } else {
-                cell.circleImage.tintColor = UIColor(named: items[indexPath.row])
+                cell.circleImage.tintColor = UIColor(named: Constants.items[indexPath.row])
             }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row > 5 {
-            thumbNailImage = items[indexPath.row]
-            listImage.image = UIImage(systemName: items[indexPath.row])
+            Constants.thumbNailImage = Constants.items[indexPath.row]
+            listImage.image = UIImage(systemName: Constants.items[indexPath.row])
         } else {
-            thumbnailColor = items[indexPath.row]
-            listImage.tintColor = UIColor(named: items[indexPath.row])
+            Constants.thumbnailColor = Constants.items[indexPath.row]
+            listImage.tintColor = UIColor(named: Constants.items[indexPath.row])
         }
     }
 }

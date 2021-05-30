@@ -37,12 +37,8 @@ public class Item: NSObject, NSCoding {
     public var flag: Bool?
     public var priority: Int?
     
-    enum Key:String {
-        case id = "id"
-        case title = "title"
-        case notes = "notes"
-        case flag = "flag"
-        case priority = "priority"
+    enum Key: String {
+        case id, title, notes, flag, priority
     }
     
     init(id: UUID, title: String?, notes: String?, flag: Bool?, priority: Int?) {
