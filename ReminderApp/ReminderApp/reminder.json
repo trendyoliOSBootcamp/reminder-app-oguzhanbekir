@@ -1,0 +1,91 @@
+
+[
+    {
+        "id": 1,
+        "title": "Aile",
+        "color": "red",
+        "image": "cart.circle.fill",
+        "items": [
+            {
+                "id": 1,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            },
+            {
+                "id": 2,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            },
+            {
+                "id": 3,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Ev",
+        "color" : "orange",
+        "image" : "cart.circle.fill",
+        "items": [
+            {
+                "id": 1,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            },
+            {
+                "id": 2,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            },
+            {
+                "id": 3,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "İş",
+        "color" : "blue",
+        "image" : "cart.circle.fill",
+        "items": [
+            {
+                "id": 1,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            },
+            {
+                "id": 2,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            },
+            {
+                "id": 3,
+                "title": "Featured",
+                "notes": "Strokey",
+                "flag": true,
+                "priority": "Normal"
+            }
+        ]
+    }
+]
+
